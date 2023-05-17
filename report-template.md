@@ -22,9 +22,9 @@ After the models were trained they were used to predict on the same testing data
 * Machine Learning Model 1: Trained on original, imbalanced data:
     * Balanced accuracy score = 0.95204792
     * Healthy-loans:
-        * Precision score: 1.00
-        * Recall score: 0.99
-        * F1-score: 1.000
+        * Precision score: 1.00 -- of all the loans the model predicted to be healthy; 100% of them were actually healthy.
+        * Recall score: 0.99 -- of all the loans to actually be classified as healthy, the model predicted this outcome correctly for 99% of the loans
+        * F1-score: 1.000 -- indicates that the model does a good job of predicting the loan status of healthy loans
       
     * High-Risk loans:
         * Precision score: 0.85
