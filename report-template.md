@@ -2,13 +2,20 @@
 
 ## Overview of the Analysis
 
-In this section, describe the analysis you completed for the machine learning models used in this Challenge. This might include:
+The project objective was to develop a logistic regression model to determine the credit worthiness of a perspective loan applicant, in essence if the company offered the loan -- would the loan be classified as "healthy" or "high-risk". 
+The dataset used to train the model consisted of historical lending activity from a peer-to-peer lending services company and included several features -- as shown below.
 
-* Explain the purpose of the analysis.
-* Explain what financial information the data was on, and what you needed to predict.
-* Provide basic information about the variables you were trying to predict (e.g., `value_counts`).
-* Describe the stages of the machine learning process you went through as part of this analysis.
-* Briefly touch on any methods you used (e.g., `LogisticRegression`, or any resampling method).
+The loan status column is used to distinguish between healthy (0) loans and high-risk (1) loans.  
+
+
+As displayed in the summary, the original dataset was heavily imbalanced as -- 75,036 loans were classified as healthy while only 2,500 loans were classified as high-risk.  Since the original dataset was highly imbalanced I 
+
+
+Given that the data in the original dataset was heavily imbalanced, the analysis compared the difference in predictive performance for two different logistic regression models. While the models were trained using different datasets, the models actually very similar as both are scikit-learn LogisticRegression Models, and use the same features to train the model.  Where the models differ relates to the data that was used to train each model.  After splitting the data into training and testing datasets:
+ * model 1: trained using original imbalanced data
+ * model 2: trained using randomly oversampled data -- which had the same number of healthy and high-risk loans
+
+After the models were trained they were used to predict on the same testing data. The results of the prediction models were analzed using scikit-learn's balance_accuracy_score, confusion_matrix, and classification_report.  The results for each model are discussed in more detail in the section below
 
 ## Results
 
