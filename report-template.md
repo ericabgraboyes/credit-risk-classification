@@ -19,15 +19,38 @@ After the models were trained they were used to predict on the same testing data
 
 ## Results
 
-Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all machine learning models.
+* Machine Learning Model 1: Trained on original, imbalanced data:
+    * Balanced accuracy score = 0.95204792
+    * Healthy-loans:
+        * Precision score: 1.00
+        * Recall score: 0.99
+        * F1-score: 1.000
+      
+    * High-Risk loans:
+        * Precision score: 0.85
+        * Recall score: 0.91
+        * F1-score: 0.88
+   
+    Confusion matrix:<br>
+    ![Confusion matrix shows healthy loans (18663 to 102) and high-risk loans (56 to 563)]
+    (/Resources/Images/original-confusion-matrix.png)
 
-* Machine Learning Model 1:
-  * Description of Model 1 Accuracy, Precision, and Recall scores.
 
-
-
-* Machine Learning Model 2:
-  * Description of Model 2 Accuracy, Precision, and Recall scores.
+* Machine Learning Model 2: Trained on randomly oversampled data:
+    * Balanced accuracy score: 0.99367812
+    * Healthy-loans:
+        * Precision score: 1.00
+        * Recall score: 0.99
+        * F1-score: 1.00
+      
+    * High-Risk loans:
+        * Precision score: 0.84
+        * Recall score: 0.99
+        * F1-score: 0.91
+        
+    Confusion matrix:<br>
+    ![Confusion matrix shows healthy loans (18649 to 116) and high-risk loans (4 to 615)]
+    (/Resources/Images/oversampled-confusion-matrix.png)
 
 ## Summary
 
