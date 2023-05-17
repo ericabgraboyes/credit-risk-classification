@@ -27,10 +27,10 @@ After the models were trained they were used to predict on the same testing data
         * F1-score: 1.000 -- indicates that the model does a good job of predicting the loan status of healthy loans
       
     * High-Risk loans:
-        * Precision score: 0.85
-        * Recall score: 0.91
-        * F1-score: 0.88
-   
+        * Precision score: 0.85 -- of the loans the model predicted to be high-risk; 85% of them were actually high-risk
+        * Recall score: 0.91 -- signifies that out of all the loans to actually be classified as high-risk, the model predicted this outcome correctly for 91% of the loans.
+        * F1-score: 0.88 -- ndicates that the model does a reasonable job of predicting the loan status of high-risk loans. The drop in precision vs. recall suggests that the model slighly over-estimates how many high-risk loans there are
+
     Confusion matrix:<br>
     ![Confusion matrix shows healthy loans (18663 to 102) and high-risk loans (56 to 563)]
     (/Resources/Images/original-confusion-matrix.png)
