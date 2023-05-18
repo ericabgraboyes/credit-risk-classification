@@ -1,9 +1,12 @@
-# Module 12 Report Template
+# Credit-Risk-Classification-Template
 
 ## Overview of the Analysis
 
 The project objective was to develop a logistic regression model to determine the credit worthiness of a perspective loan applicant, in essence if the company offered the loan -- would the loan be classified as "healthy" or "high-risk". 
 The dataset used to train the model consisted of historical lending activity from a peer-to-peer lending services company and included several features -- as shown below.
+
+**Features used in model to predict loan status:<br>**
+![Summary DataFrame displaying all features used in predicting loan status](/Images/features-dataframe.png)
 
 The loan status column is used to distinguish between healthy (0) loans and high-risk (1) loans.  
 
@@ -30,7 +33,7 @@ After the models were trained they were used to predict on the same testing data
         * Recall score: 0.91 -- signifies that out of all the loans to actually be classified as high-risk, the model predicted this outcome correctly for 91% of the loans.
         * F1-score: 0.88 -- indicates that the model does a reasonable job of predicting the loan status of high-risk loans. The drop in precision vs. recall suggests that the model slighly over-estimates how many high-risk loans there are
 
-    Confusion matrix:<br>
+**Confusion matrix - Original imbalanced dataset:**<br>
     ![Confusion matrix shows healthy loans (18663 to 102) and high-risk loans (56 to 563)](/Images/original-confusion-matrix.png)
 
 * Machine Learning Model 2: Trained on randomly oversampled data:
@@ -45,9 +48,8 @@ After the models were trained they were used to predict on the same testing data
         * Recall score: 0.99 -- signifies that out of all the loans to actually be classified as high-risk, the model predicted this outcome correctly for 99% of the loans.
         * F1-score: 0.91 -- indicates that the model does a reasonable job of predicting the loan status of high-risk loans. The drop in precision vs. recall suggests that the model slighly over-estimates how many high-risk loans there are
         
-    Confusion matrix:<br>
-    ![Confusion matrix shows healthy loans (18649 to 116) and high-risk loans (4 to 615)]
-    (/Images/oversampled-confusion-matrix.png)
+**Confusion matrix - randomly oversampled data:<br>**
+    ![Confusion matrix shows healthy loans (18649 to 116) and high-risk loans (4 to 615)](/Images/oversampled-confusion-matrix.png)
 
 ## Summary
 
