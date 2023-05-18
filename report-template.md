@@ -18,7 +18,6 @@ Given that the data in the original dataset was heavily imbalanced, the analysis
 After the models were trained they were used to predict on the same testing data. The results of the prediction models were analzed using scikit-learn's balance_accuracy_score, confusion_matrix, and classification_report.  The results for each model are discussed in more detail in the section below
 
 ## Results
-
 * Machine Learning Model 1: Trained on original, imbalanced data:
     * Balanced accuracy score = 0.95204792
     * Healthy-loans:
@@ -32,8 +31,7 @@ After the models were trained they were used to predict on the same testing data
         * F1-score: 0.88 -- indicates that the model does a reasonable job of predicting the loan status of high-risk loans. The drop in precision vs. recall suggests that the model slighly over-estimates how many high-risk loans there are
 
     Confusion matrix:<br>
-    ![Confusion matrix shows healthy loans (18663 to 102) and high-risk loans (56 to 563)]
-    (/Images/original-confusion-matrix.png)
+    ![Confusion matrix shows healthy loans (18663 to 102) and high-risk loans (56 to 563)](/Images/original-confusion-matrix.png)
 
 * Machine Learning Model 2: Trained on randomly oversampled data:
     * Balanced accuracy score: 0.99367812
