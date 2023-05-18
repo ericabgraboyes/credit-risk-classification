@@ -52,9 +52,6 @@ After the models were trained they were used to predict on the same testing data
     ![Confusion matrix shows healthy loans (18649 to 116) and high-risk loans (4 to 615)](/Images/oversampled-confusion-matrix.png)
 
 ## Summary
+When thinking about the business/real-world implications I would maintain that the focus of the model should be on predicting high-risk loans vs. low risk or healthy loans.  The implications to a small bank could be much more impactful if they are unable to predict risky loans vs healthy loans.  Keeping this in consideration I would recommend using the over-sampled model (if we had to use one of the two models), since the recall improved from 0.91 to 0.99 and only came at the cost of reducing the precision by .01.  Overall the loss in precision is pretty minor given the precision score is still relatively high at 0.84.
 
-Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. For example:
-* Which one seems to perform best? How do you know it performs best?
-* Does performance depend on the problem we are trying to solve? (For example, is it more important to predict the `1`'s, or predict the `0`'s? )
-
-If you do not recommend any of the models, please justify your reasoning.
+One item to consider before "fully embracing" the model is that it would make sense to run the analysis with a validation dataset; which has not been done in the initial analysis.  Another item to consider is the need to check for overfitting to the data -- which also was not done in the initial analysis.  
