@@ -33,8 +33,7 @@ After the models were trained they were used to predict on the same testing data
 
     Confusion matrix:<br>
     ![Confusion matrix shows healthy loans (18663 to 102) and high-risk loans (56 to 563)]
-    (/Resources/Images/original-confusion-matrix.png)
-
+    (/Images/original-confusion-matrix.png)
 
 * Machine Learning Model 2: Trained on randomly oversampled data:
     * Balanced accuracy score: 0.99367812
@@ -50,7 +49,7 @@ After the models were trained they were used to predict on the same testing data
         
     Confusion matrix:<br>
     ![Confusion matrix shows healthy loans (18649 to 116) and high-risk loans (4 to 615)]
-    (/Resources/Images/oversampled-confusion-matrix.png)
+    (/Images/oversampled-confusion-matrix.png)
 
 ## Summary
 
